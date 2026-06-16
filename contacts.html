@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контактна інформація Павла Аліліуєнка та форма зворотного зв'язку">
+    <meta name="author" content="Павло Аліліуєнко">
+    <title>Контакти — Портфоліо Павла Аліліуєнка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-brand">
+                <h1 class="header-name">Павло Аліліуєнко</h1>
+                <p class="header-subtitle">Майбутній фронтенд-розробник | Студент ХАІ</p>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Про мене</a></li>
+                    <li class="nav-item nav-item--active">Контакти</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="section">
+            <h1 class="section-title">Контакти</h1>
+            <p>
+                Якщо у вас є питання, пропозиції щодо співпраці або ви просто хочете познайомитися —
+                <strong>напишіть мені!</strong> Я відповідаю протягом 24 годин.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Контактна інформація</h2>
+            <dl class="facts-list">
+                <dt>Email</dt>
+                <dd><a href="mailto:pashamisery@example.com">pashamisery@example.com</a></dd>
+                <dt>Телефон</dt>
+                <dd><a href="tel:+380000000000">+38 (000) 000-00-00</a></dd>
+                <dt>GitHub</dt>
+                <dd><a href="https://github.com/pashamisery" target="_blank">github.com/pashamisery</a></dd>
+                <dt>LinkedIn</dt>
+                <dd><a href="https://linkedin.com/in/pashamisery" target="_blank">linkedin.com/in/pashamisery</a></dd>
+                <dt>TikTok / Twitch</dt>
+                <dd>@pashamisery</dd>
+                <dt>Місто</dt>
+                <dd>Харків, Україна</dd>
+            </dl>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Форма зворотного зв'язку</h2>
+            <p>Заповніть форму нижче, і я зв'яжуся з вами якнайшвидше.</p>
+
+            <form class="contact-form" action="#" method="post">
+
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">Контактна інформація</legend>
+
+                    <label class="form-label" for="name">Ім'я:</label>
+                    <input class="form-input" type="text" id="name" name="name"
+                        placeholder="Введіть ваше ім'я" required>
+
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-input" type="email" id="email" name="email"
+                        placeholder="email@example.com" required>
+                </fieldset>
+
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">Повідомлення</legend>
+
+                    <label class="form-label" for="subject">Тема:</label>
+                    <select class="form-select" id="subject" name="subject" required>
+                        <option value="">-- Оберіть тему --</option>
+                        <option value="general">Загальне питання</option>
+                        <option value="cooperation">Співпраця</option>
+                        <option value="feedback">Відгук</option>
+                        <option value="job">Пропозиція роботи</option>
+                    </select>
+
+                    <p class="form-label">Тип звернення:</p>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="type" value="question" required> Питання
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="type" value="suggestion"> Пропозиція
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="type" value="complaint"> Скарга
+                        </label>
+                    </div>
+
+                    <label class="form-label" for="message">Повідомлення:</label>
+                    <textarea class="form-textarea" id="message" name="message"
+                        rows="5" placeholder="Ваше повідомлення..." required></textarea>
+                </fieldset>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" name="consent" required>
+                    Я погоджуюсь на обробку персональних даних
+                </label>
+
+                <button class="btn-submit" type="submit">Надіслати</button>
+
+            </form>
+        </section>
+
+        <aside class="sidebar">
+            <h2 class="sidebar-title">Найкращий спосіб зв'язку</h2>
+            <p>
+                Найшвидше я відповідаю на <strong>email</strong>.
+                Для термінових питань — телефонуйте або пишіть у месенджер.
+            </p>
+        </aside>
+
+    </main>
+
+    <a href="#" class="back-to-top" title="Нагору">↑</a>
+
+    <footer class="site-footer">
+        <p class="footer-copy">&copy; 2025 Павло Аліліуєнко. Всі права захищені.</p>
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Про мене</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакти</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

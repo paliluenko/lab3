@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Vim тимчасові файли
+*.swp
+*~
+
+# Тимчасові файли
+*.tmp
+*.log
