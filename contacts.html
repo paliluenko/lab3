@@ -13,130 +13,108 @@
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="header-brand">
-                <h1 class="header-name">Павло Аліліуєнко</h1>
-                <p class="header-subtitle">Майбутній фронтенд-розробник | Студент ХАІ</p>
+    <div class="page">
+
+        <header class="site-header" style="grid-area: header">
+            <div class="header-inner">
+                <div class="header-brand">
+                    <span class="header-name">Павло Аліліуєнко</span>
+                    <span class="header-subtitle">Майбутній фронтенд-розробник</span>
+                </div>
+                <nav class="nav">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="hamburger" aria-label="Меню">
+                        <span></span><span></span><span></span>
+                    </label>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">Про мене</a></li>
+                        <li class="nav-item nav-item--active">Контакти</li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">Про мене</a></li>
-                    <li class="nav-item nav-item--active">Контакти</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </header>
 
-    <main class="main-content">
-
-        <section class="section">
-            <h1 class="section-title">Контакти</h1>
-            <p>
-                Якщо у вас є питання, пропозиції щодо співпраці або ви просто хочете познайомитися —
-                <strong>напишіть мені!</strong> Я відповідаю протягом 24 годин.
-            </p>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Контактна інформація</h2>
-            <dl class="facts-list">
-                <dt>Email</dt>
-                <dd><a href="mailto:pashamisery@example.com">pashamisery@example.com</a></dd>
-                <dt>Телефон</dt>
-                <dd><a href="tel:+380000000000">+38 (000) 000-00-00</a></dd>
-                <dt>GitHub</dt>
-                <dd><a href="https://github.com/pashamisery" target="_blank">github.com/pashamisery</a></dd>
-                <dt>LinkedIn</dt>
-                <dd><a href="https://linkedin.com/in/pashamisery" target="_blank">linkedin.com/in/pashamisery</a></dd>
-                <dt>TikTok / Twitch</dt>
-                <dd>@pashamisery</dd>
-                <dt>Місто</dt>
-                <dd>Харків, Україна</dd>
-            </dl>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Форма зворотного зв'язку</h2>
-            <p>Заповніть форму нижче, і я зв'яжуся з вами якнайшвидше.</p>
-
-            <form class="contact-form" action="#" method="post">
-
-                <fieldset class="form-fieldset">
-                    <legend class="form-legend">Контактна інформація</legend>
-
-                    <label class="form-label" for="name">Ім'я:</label>
-                    <input class="form-input" type="text" id="name" name="name"
-                        placeholder="Введіть ваше ім'я" required>
-
-                    <label class="form-label" for="email">Email:</label>
-                    <input class="form-input" type="email" id="email" name="email"
-                        placeholder="email@example.com" required>
-                </fieldset>
-
-                <fieldset class="form-fieldset">
-                    <legend class="form-legend">Повідомлення</legend>
-
-                    <label class="form-label" for="subject">Тема:</label>
-                    <select class="form-select" id="subject" name="subject" required>
-                        <option value="">-- Оберіть тему --</option>
-                        <option value="general">Загальне питання</option>
-                        <option value="cooperation">Співпраця</option>
-                        <option value="feedback">Відгук</option>
-                        <option value="job">Пропозиція роботи</option>
-                    </select>
-
-                    <p class="form-label">Тип звернення:</p>
-                    <div class="radio-group">
-                        <label class="radio-label">
-                            <input type="radio" name="type" value="question" required> Питання
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="type" value="suggestion"> Пропозиція
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="type" value="complaint"> Скарга
-                        </label>
-                    </div>
-
-                    <label class="form-label" for="message">Повідомлення:</label>
-                    <textarea class="form-textarea" id="message" name="message"
-                        rows="5" placeholder="Ваше повідомлення..." required></textarea>
-                </fieldset>
-
-                <label class="checkbox-label">
-                    <input type="checkbox" name="consent" required>
-                    Я погоджуюсь на обробку персональних даних
-                </label>
-
-                <button class="btn-submit" type="submit">Надіслати</button>
-
-            </form>
-        </section>
-
-        <aside class="sidebar">
-            <h2 class="sidebar-title">Найкращий спосіб зв'язку</h2>
-            <p>
-                Найшвидше я відповідаю на <strong>email</strong>.
-                Для термінових питань — телефонуйте або пишіть у месенджер.
-            </p>
+        <aside class="sidebar" style="grid-area: sidebar">
+            <h2 class="sidebar-title">Найкращий зв'язок</h2>
+            <p>Найшвидше відповідаю на <strong>email</strong>. Для термінових питань — телефонуйте.</p>
+            <ul class="sidebar-links">
+                <li><a href="mailto:pashamisery@example.com">📧 Email</a></li>
+                <li><a href="tel:+380000000000">📞 Телефон</a></li>
+                <li><a href="https://github.com/pashamisery" target="_blank">💻 GitHub</a></li>
+            </ul>
         </aside>
 
-    </main>
+        <main class="main-content" style="grid-area: content">
+
+            <section class="section">
+                <h1 class="section-title">Контакти</h1>
+                <p>Якщо у вас є питання або пропозиції — <strong>напишіть мені!</strong> Відповідаю протягом 24 годин.</p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Контактна інформація</h2>
+                <dl class="facts-list">
+                    <dt>Email</dt><dd><a href="mailto:pashamisery@example.com">pashamisery@example.com</a></dd>
+                    <dt>Телефон</dt><dd><a href="tel:+380000000000">+38 (000) 000-00-00</a></dd>
+                    <dt>GitHub</dt><dd><a href="https://github.com/pashamisery" target="_blank">github.com/pashamisery</a></dd>
+                    <dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/pashamisery" target="_blank">linkedin.com/in/pashamisery</a></dd>
+                    <dt>TikTok / Twitch</dt><dd>@pashamisery</dd>
+                    <dt>Місто</dt><dd>Харків, Україна</dd>
+                </dl>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Форма зворотного зв'язку</h2>
+                <form class="contact-form" action="#" method="post">
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Контактна інформація</legend>
+                        <label class="form-label" for="name">Ім'я:</label>
+                        <input class="form-input" type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                        <label class="form-label" for="email">Email:</label>
+                        <input class="form-input" type="email" id="email" name="email" placeholder="email@example.com" required>
+                    </fieldset>
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Повідомлення</legend>
+                        <label class="form-label" for="subject">Тема:</label>
+                        <select class="form-select" id="subject" name="subject" required>
+                            <option value="">-- Оберіть тему --</option>
+                            <option value="general">Загальне питання</option>
+                            <option value="cooperation">Співпраця</option>
+                            <option value="feedback">Відгук</option>
+                            <option value="job">Пропозиція роботи</option>
+                        </select>
+                        <p class="form-label">Тип звернення:</p>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="type" value="question" required> Питання</label>
+                            <label class="radio-label"><input type="radio" name="type" value="suggestion"> Пропозиція</label>
+                            <label class="radio-label"><input type="radio" name="type" value="complaint"> Скарга</label>
+                        </div>
+                        <label class="form-label" for="message">Повідомлення:</label>
+                        <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+                    </fieldset>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="consent" required>
+                        Я погоджуюсь на обробку персональних даних
+                    </label>
+                    <button class="btn-submit" type="submit">Надіслати</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="site-footer" style="grid-area: footer">
+            <p class="footer-copy">&copy; 2025 Павло Аліліуєнко. Всі права захищені.</p>
+            <nav class="footer-nav">
+                <a href="index.html" class="nav-link">Головна</a>
+                <a href="about.html" class="nav-link">Про мене</a>
+                <a href="contacts.html" class="nav-link">Контакти</a>
+            </nav>
+        </footer>
+
+    </div>
 
     <a href="#" class="back-to-top" title="Нагору">↑</a>
-
-    <footer class="site-footer">
-        <p class="footer-copy">&copy; 2025 Павло Аліліуєнко. Всі права захищені.</p>
-        <nav class="nav-menu">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html" class="nav-link">Головна</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">Про мене</a></li>
-                <li class="nav-item"><a href="contacts.html" class="nav-link">Контакти</a></li>
-            </ul>
-        </nav>
-    </footer>
 
 </body>
 </html>
